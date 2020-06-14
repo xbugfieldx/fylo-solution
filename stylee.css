@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    background-color: hsl(229, 57%, 11%);
+    color: #FFF;
+    height: 100vh;
+}
+.container{
+    position: absolute;
+    background-image: url(./imgs/bg-desktop.svg);
+    width: 100%;
+    height: 50vh;
+    bottom: 0;
+    left: 0;
+}
+
+.content{
+    position: absolute;
+    left: 20%;
+    top: -90;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content .box1{
+    background-color:  hsl(228, 56%, 26%);
+    padding: 40px;
+    margin-right: 20px;
+    width: 30vh;
+    height: 100px;
+    border-top-right-radius: 80px;
+}
+.box1 .logo {
+    display: block;
+    margin-bottom: 20px;
+    width: 120px;
+}
+.box1 .icon{
+    background-color: hsl(229, 57%, 11%);
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius:5px;
+    margin-right: 10px;
+}
+
+
+.content .box2{
+    background-color: hsl(228, 56%, 26%);
+    padding: 20px;
+    height: 80px;
+    border-radius: 10px;
+    position: relative;
+    width: 70vh;
+    top: 60px;
+}
+
+.sub-box{
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: -20;
+    right: 30px;
+    height: 10%;
+    padding: 20px 10px;
+    border-radius: 5px;
+    border-bottom-right-radius: 0%;
+}
+.progress{
+    background-color: hsl(229, 57%, 11%);
+    width: 100%;
+    height: 20px;
+    border-radius: 130px;
+    margin: 10px 0;
+}
+.progress-bar{
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+    background: linear-gradient(
+        75deg,
+        rgba(255, 163, 153, 1) 26%,
+        rgba(255, 77, 151, 1) 70%
+    );
+}
+.right {
+    float: right;
+}
+.sub-box span{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+@media(max-width: 775px) {
+    .container {
+      height: 100vh;
+      background: url(./imgs/bg-desktop.svg) no-repeat center center/cover;
+    }
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+    .content .box1 {
+      background-color: hsl(228, 56%, 26%);
+      padding: 40px;
+      margin-right: 0;
+      margin-bottom: 0;
+      border-top-right-radius: 80px;
+      width: 100%;
+      height: 100px;
+    }
+    .content .box2 {
+      background-color: hsl(228, 56%, 26%);
+      padding: 40px;
+      margin-right: 20px;
+      border-top-right-radius: 10px;
+      width: 100%;
+      height: 100px;
+    }
+    .sub-box {
+      right: 30%;
+      top: 140px;
+    }
+  }
